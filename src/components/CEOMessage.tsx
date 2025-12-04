@@ -5,6 +5,7 @@ export default function CEOMessage() {
     return (
         <section id="message" className="section message-section">
             <div className="container">
+                <h2 className="section-title mobile-title">Message</h2>
                 <div className="message-wrapper">
                     <div className="message-image">
                         <div className="portrait-wrapper" style={{ boxShadow: 'none', background: 'transparent' }}>
@@ -19,7 +20,7 @@ export default function CEOMessage() {
                         </div>
                     </div>
                     <div className="message-content">
-                        <h2 className="section-title" style={{ textAlign: 'left' }}>Message</h2>
+                        <h2 className="section-title desktop-title" style={{ textAlign: 'left' }}>Message</h2>
                         <h3 className="message-heading">
                             やりたいことを見つけられる<br />社会を創りたい
                         </h3>
