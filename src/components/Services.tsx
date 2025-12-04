@@ -8,7 +8,6 @@ const services: ServiceData[] = [
         id: 'open-company',
         title: '仕事体験事業',
         description: '企業の仕事の魅力を伝える体験型プログラムを提供します。',
-        accentColor: '#0070f3',
         icon: (
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -44,7 +43,6 @@ const services: ServiceData[] = [
         id: 'hr-consulting',
         title: '人事コンサルティング',
         description: '採用・定着・キャリア形成まで一貫支援するHRコンサルティング。',
-        accentColor: '#f81ce5',
         icon: (
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M2 20h.01"></path>
@@ -80,7 +78,6 @@ const services: ServiceData[] = [
         id: 'platform',
         title: '仕事体験プラットフォーム',
         description: '地域や企業の魅力的な仕事体験を集約し、届けるプラットフォーム事業。',
-        accentColor: '#00bfa5',
         icon: (
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
@@ -139,13 +136,16 @@ export default function Services() {
                             className="service-card-new"
                             onClick={() => openModal(service)}
                         >
-                            <div className="service-accent-bar" style={{ backgroundColor: service.accentColor }}></div>
+                            <div className="service-icon-wrapper">
+                                {service.icon}
+                            </div>
                             <h3 className="service-card-title">{service.title}</h3>
                             <p className="service-card-desc">{service.description}</p>
-                            <div className="service-visual-area" style={{ backgroundColor: `${service.accentColor}10` }}>
-                                <div className="service-visual-icon" style={{ color: service.accentColor }}>
-                                    {service.icon}
-                                </div>
+                            <div className="service-card-arrow">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
                             </div>
                         </div>
                     ))}
