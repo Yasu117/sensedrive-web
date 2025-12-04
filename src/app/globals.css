@@ -1520,6 +1520,12 @@ img {
   }
 
   /* Message Section Compact */
+  .message-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
   .message-body {
     flex-direction: column;
     gap: 1.5rem;
