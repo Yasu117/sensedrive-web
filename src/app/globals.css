@@ -1534,32 +1534,33 @@ img {
   /* Message Section Compact */
   .message-wrapper {
     flex-direction: column !important;
-    gap: 2rem;
+    gap: 1.5rem;
+    /* Reduced gap */
     align-items: center;
     text-align: center;
   }
 
   .mobile-title {
-    display: block;
+    display: block !important;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    /* Reduced margin */
   }
 
   .desktop-title {
-    display: none;
+    display: none !important;
   }
 
   .message-image {
     width: 100%;
     display: flex;
     justify-content: center;
-    order: 1;
-    /* Image first (after title which is outside) */
+    /* order property removed as HTML order is correct */
   }
 
   .message-content {
-    order: 2;
-    /* Content second */
+    /* order property removed */
+    width: 100%;
   }
 
   .message-body {
