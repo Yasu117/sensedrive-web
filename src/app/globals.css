@@ -1539,6 +1539,13 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
+    order: 1;
+    /* Image first */
+  }
+
+  .message-content {
+    order: 2;
+    /* Content second */
   }
 
   .message-body {
