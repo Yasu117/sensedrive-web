@@ -1412,18 +1412,6 @@ img {
   }
 
   /* Hero adjustments */
-  /* Hero adjustments */
-  .hero {
-    padding-bottom: 0;
-    min-height: auto;
-  }
-
-  .hero-visual {
-    height: 0;
-    margin: 0;
-    padding: 0;
-  }
-
   .hero-title {
     font-size: clamp(1.2rem, 6vw, 1.8rem);
     line-height: 1.4;
@@ -1468,16 +1456,14 @@ img {
   }
 
   .main-circle {
-    width: 200px;
-    height: 200px;
-    top: -150px;
-    /* Pull up to overlap with text since container height is 0 */
-    right: -40px;
+    width: 250px;
+    height: 250px;
+    top: -60px;
+    right: -60px;
     left: auto;
     background: var(--color-accent);
     opacity: 0.3;
     animation: none;
-    z-index: 0;
   }
 
   /* Services: Horizontal Scroll */
@@ -1534,16 +1520,6 @@ img {
   }
 
   /* Message Section Compact */
-  .message-section {
-    padding-top: 0;
-  }
-
-  .message-wrapper {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
-
   .message-body {
     flex-direction: column;
     gap: 1.5rem;
