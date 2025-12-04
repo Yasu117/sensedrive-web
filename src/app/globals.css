@@ -1417,11 +1417,25 @@ img {
 
   /* Hero adjustments */
   .hero {
-    min-height: auto;
+    min-height: 100dvh;
+    /* Full viewport height */
     display: flex;
-    align-items: center;
-    padding-bottom: 60px;
-    /* Moderate spacing */
+    align-items: flex-end;
+    /* Align content to bottom */
+    padding-bottom: 120px;
+    /* Space from bottom */
+  }
+
+  .hero-inner {
+    text-align: left !important;
+    /* Force left alignment */
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    text-align: left;
+    margin-left: 0;
   }
 
   .hero-title {
