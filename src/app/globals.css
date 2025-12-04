@@ -1427,10 +1427,12 @@ img {
   }
 
   .hero-inner {
+    display: block !important;
+    /* Reset grid */
     text-align: left !important;
-    /* Force left alignment */
     width: 100%;
-    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .hero-content {
