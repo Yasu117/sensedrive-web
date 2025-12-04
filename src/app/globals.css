@@ -1412,6 +1412,11 @@ img {
   }
 
   /* Hero adjustments */
+  .hero {
+    padding-bottom: 20px;
+    min-height: auto;
+  }
+
   .hero-title {
     font-size: clamp(1.2rem, 6vw, 1.8rem);
     line-height: 1.4;
@@ -1520,6 +1525,10 @@ img {
   }
 
   /* Message Section Compact */
+  .message-section {
+    padding-top: 0;
+  }
+
   .message-wrapper {
     flex-direction: column;
     gap: 2rem;
