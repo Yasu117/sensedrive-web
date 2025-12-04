@@ -1528,6 +1528,19 @@ img {
   }
 
   /* Message Section Compact */
+  .message-wrapper {
+    flex-direction: column !important;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .message-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .message-body {
     flex-direction: column;
     gap: 1.5rem;
