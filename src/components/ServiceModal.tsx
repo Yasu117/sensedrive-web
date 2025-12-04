@@ -13,6 +13,7 @@ export interface ServiceData {
         process: { step: string; desc: string }[];
         effects: string[];
     };
+    accentColor?: string;
 }
 
 interface ServiceModalProps {
